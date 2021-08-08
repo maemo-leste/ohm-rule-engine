@@ -3,9 +3,7 @@
 
 AC_PREREQ(2.59)
 
-AC_INIT([prolog],
-	m4_esyscmd([build-aux/git-version-gen --tags .tarball-version]),
-	[multimedia at maemo.org])
+AC_INIT([prolog], [1.1.14], [multimedia at maemo.org])
 
 AC_CONFIG_SRCDIR(ohm-plugin)
 AC_CONFIG_MACRO_DIR([m4])
