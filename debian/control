@@ -1,0 +1,28 @@
+Source: ohm-rule-engine
+Section: libs
+Priority: optional
+Maintainer: Merlijn Wajer <merlijn@wizzup.org>
+Build-Depends:
+ debhelper-compat (= 12),
+ libtool,
+ libtool-bin,
+ autoconf,
+ autoconf-archive,
+ automake,
+ pkg-config,
+ check,
+ libprolog-dev,
+ ohm-dev,
+ libglib2.0-dev,
+ libsimple-trace-dev,
+Standards-Version: 4.3.0
+
+Package: ohm-rule-engine
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: A prolog-based OHM rule engine plugin.
+
+Package: prolog-resourcepolicy-extensions
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Prolog extensions for the resource policy framework
